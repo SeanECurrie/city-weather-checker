@@ -5,42 +5,39 @@
  },
  "weather": [
   {
-   "id": 501,
-   "main": "Rain",
-   "description": "moderate rain",
-   "icon": "10n"
+   "id": 803,
+   "main": "Clouds",
+   "description": "broken clouds",
+   "icon": "04n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 49.69,
-  "feels_like": 43.88,
-  "temp_min": 47.66,
-  "temp_max": 50.67,
-  "pressure": 1018,
-  "humidity": 95,
-  "sea_level": 1018,
-  "grnd_level": 1016
+  "temp": 51.51,
+  "feels_like": 50.77,
+  "temp_min": 49.66,
+  "temp_max": 52.66,
+  "pressure": 1007,
+  "humidity": 94,
+  "sea_level": 1007,
+  "grnd_level": 1006
  },
- "visibility": 9217,
+ "visibility": 10000,
  "wind": {
-  "speed": 16.6,
-  "deg": 354,
-  "gust": 22.21
- },
- "rain": {
-  "1h": 3.65
+  "speed": 1.01,
+  "deg": 321,
+  "gust": 7
  },
  "clouds": {
-  "all": 100
+  "all": 58
  },
- "dt": 1794918205,
+ "dt": 1794949943,
  "sys": {
   "type": 2,
   "id": 268395,
   "country": "JP",
-  "sunrise": 1794863916,
-  "sunset": 1794900830
+  "sunrise": 1794950376,
+  "sunset": 1794987194
  },
  "timezone": 32400,
  "id": 1850144,

@@ -8,35 +8,34 @@
    "id": 803,
    "main": "Clouds",
    "description": "broken clouds",
-   "icon": "04d"
+   "icon": "04n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 73.27,
-  "feels_like": 73.13,
-  "temp_min": 72.72,
-  "temp_max": 73.27,
-  "pressure": 1012,
-  "humidity": 60,
-  "sea_level": 1012,
-  "grnd_level": 837
+  "temp": 61.5,
+  "feels_like": 61.63,
+  "temp_min": 61.5,
+  "temp_max": 61.5,
+  "pressure": 1017,
+  "humidity": 91,
+  "sea_level": 1017,
+  "grnd_level": 838
  },
  "visibility": 10000,
  "wind": {
-  "speed": 17.27,
-  "deg": 60
+  "speed": 8.84,
+  "deg": 42,
+  "gust": 23.73
  },
  "clouds": {
-  "all": 75
+  "all": 72
  },
- "dt": 1794918324,
+ "dt": 1794950266,
  "sys": {
-  "type": 1,
-  "id": 2558,
   "country": "KE",
-  "sunrise": 1794885150,
-  "sunset": 1794928983
+  "sunrise": 1794971561,
+  "sunset": 1795015397
  },
  "timezone": 10800,
  "id": 184745,
