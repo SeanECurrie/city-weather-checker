@@ -24,13 +24,13 @@
  },
  "visibility": 6000,
  "wind": {
-  "speed": 6.91,
-  "deg": 80
+  "speed": 5.75,
+  "deg": 60
  },
  "clouds": {
   "all": 15
  },
- "dt": 1794884130,
+ "dt": 1794885235,
  "sys": {
   "type": 1,
   "id": 2514,

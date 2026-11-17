@@ -13,12 +13,12 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 69.48,
-  "feels_like": 69.78,
+  "temp": 68.31,
+  "feels_like": 68.79,
   "temp_min": 68.31,
-  "temp_max": 69.55,
+  "temp_max": 68.92,
   "pressure": 1015,
-  "humidity": 78,
+  "humidity": 84,
   "sea_level": 1015,
   "grnd_level": 1011
  },
@@ -30,10 +30,10 @@
  "clouds": {
   "all": 100
  },
- "dt": 1794884904,
+ "dt": 1794885578,
  "sys": {
   "type": 2,
-  "id": 2012285,
+  "id": 2012687,
   "country": "NZ",
   "sunrise": 1794848522,
   "sunset": 1794899385
