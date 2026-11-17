@@ -1,0 +1,45 @@
+{
+ "coord": {
+  "lon": -21.8954,
+  "lat": 64.1355
+ },
+ "weather": [
+  {
+   "id": 800,
+   "main": "Clear",
+   "description": "clear sky",
+   "icon": "01n"
+  }
+ ],
+ "base": "stations",
+ "main": {
+  "temp": 35.26,
+  "feels_like": 28.15,
+  "temp_min": 35.26,
+  "temp_max": 35.26,
+  "pressure": 992,
+  "humidity": 64,
+  "sea_level": 992,
+  "grnd_level": 992
+ },
+ "visibility": 10000,
+ "wind": {
+  "speed": 9.22,
+  "deg": 80
+ },
+ "clouds": {
+  "all": 0
+ },
+ "dt": 1794884127,
+ "sys": {
+  "type": 1,
+  "id": 91,
+  "country": "IS",
+  "sunrise": 1794909732,
+  "sunset": 1794932587
+ },
+ "timezone": 0,
+ "id": 3413829,
+ "name": "Reykjavik",
+ "cod": 200
+}

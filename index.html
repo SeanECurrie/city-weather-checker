@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City Weather Checker: how it works</title>
+<style>
+  :root {
+    --bg: #0e1420; --panel: #151d2c; --panel-2: #1b2537; --line: #2a3650;
+    --ink: #eef2f8; --soft: #a9b4c7; --dim: #7c89a1;
+    --sky: #7cc4ff; --sun: #ffc857; --leaf: #7ee0a3; --hit: rgba(255, 200, 87, .16);
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); }
+  ::selection { background: var(--sun); color: #1a1408; }
+  .app { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(420px, 1fr); height: 100vh; }
+  .stage { position: relative; overflow: hidden; background: #000; flex: 1; min-height: 0; }
+  .stage iframe { position: absolute; top: 0; left: 0; width: 1400px; height: 900px; border: 0; transform-origin: 0 0; }
+  .left { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  .cities {
+    padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    background: #0b101a; border-top: 1px solid var(--line); max-height: 96px; overflow-y: auto;
+  }
+  .cities span { color: var(--soft); font-weight: 600; font-size: 13px; margin-right: 4px; }
+  button { font: inherit; cursor: pointer; }
+  .cities button {
+    border: 1px solid var(--line); background: var(--panel-2); color: var(--ink);
+    padding: 5px 12px; border-radius: 999px; font-size: 13px;
+  }
+  .cities button:hover { border-color: var(--sun); }
+  button:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
+  .side { display: flex; flex-direction: column; min-height: 0; border-left: 1px solid var(--line); background: var(--panel); }
+  .head { padding: 18px 22px 12px; }
+  .head h1 { margin: 0 0 4px; font-size: 21px; letter-spacing: -.01em; }
+  .head p { margin: 0; color: var(--soft); }
+  .live { margin: 0 22px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2); overflow: hidden; }
+  .live h2 { margin: 0; padding: 9px 14px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--leaf); border-bottom: 1px solid var(--line); display: flex; gap: 8px; align-items: center; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--leaf); }
+  .dot.pulse { animation: pulse .9s ease-out 1; }
+  @keyframes pulse { from { box-shadow: 0 0 0 0 rgba(126, 224, 163, .8); } to { box-shadow: 0 0 0 12px rgba(126, 224, 163, 0); } }
+  @media (prefers-reduced-motion: reduce) { .dot.pulse { animation: none; } }
+  .facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; padding: 12px 14px; margin: 0; font-size: 13.5px; }
+  .facts dt { color: var(--dim); }
+  .facts dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+  .facts code { font: 12.5px var(--mono); color: var(--sky); }
+  .facts img { height: 34px; vertical-align: middle; border-radius: 4px; margin-right: 8px; }
+  .facts img.thumb { width: 60px; object-fit: cover; }
+  .tabs { display: flex; gap: 4px; padding: 0 22px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  .tabs button {
+    border: 0; background: none; color: var(--soft); padding: 9px 12px; white-space: nowrap;
+    border-bottom: 2px solid transparent; font-size: 13.5px; font-weight: 600;
+  }
+  .tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--sun); }
+  .step { flex: 1; min-height: 0; overflow: auto; padding: 16px 22px 28px; }
+  .step h3 { margin: 0 0 6px; font-size: 17px; }
+  .step p { margin: 0 0 12px; color: var(--soft); max-width: 62ch; }
+  .step p b { color: var(--ink); }
+  .file { font: 12px var(--mono); color: var(--dim); margin: 0 0 6px; }
+  pre {
+    margin: 0 0 16px; padding: 10px 0; background: #0b101a; border: 1px solid var(--line); border-radius: 8px;
+    font: 12.5px/1.65 var(--mono); overflow-x: auto; tab-size: 2;
+  }
+  pre .ln { display: block; padding: 0 14px 0 0; white-space: pre; color: #d3dbe8; }
+  pre .ln i { display: inline-block; width: 44px; padding-right: 12px; text-align: right; color: #4d5a73; font-style: normal; user-select: none; }
+  pre .ln.hit { background: var(--hit); box-shadow: inset 3px 0 0 var(--sun); color: #fff; }
+  pre .c { color: #6f7f9b; }
+  pre .s { color: #a5e3b9; }
+  pre .k { color: #7cc4ff; }
+  @media (max-width: 900px) {
+    .app { display: block; height: auto; }
+    .stage { flex: none; }
+    .cities { max-height: 132px; }
+    .side { border-left: 0; border-top: 1px solid var(--line); }
+    .step { overflow: visible; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="left">
+    <section class="stage" id="stage" aria-label="The app, running">
+      <iframe id="app" src="app/index.html" title="City Weather Checker"></iframe>
+    </section>
+    <div class="cities" id="cities"><span>Try a city:</span></div>
+  </div>
+
+  <aside class="side">
+    <div class="head">
+      <h1>City Weather Checker</h1>
+      <p>The app is the original code. This side shows what it just did with the weather service's answer.</p>
+    </div>
+
+    <div class="live" aria-live="polite">
+      <h2><span class="dot" id="dot"></span>What the last search did</h2>
+      <dl class="facts" id="facts"><dt>Waiting</dt><dd>Search a city, or pick one under the app.</dd></dl>
+    </div>
+
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="step" id="step" role="tabpanel"></div>
+  </aside>
+</div>
+
+<script>
+const STEPS = [
+  { tab: "1. Live data", title: "It asks a real weather service, every search",
+    text: "Each search builds a web address with the city in it, sends it to OpenWeatherMap, and waits for the answer. The answer comes back as raw data, and the rest of the code turns that into the screen. <b>On this public copy</b> the same code runs, but the answer is the service's real one saved by a job that re-asks about every half hour, because the key that lets the app ask live is kept private. That also limits this copy to the cities listed under the app.",
+    parts: [["script.js", 8, 22]] },
+  { tab: "2. Backgrounds", title: "The weather picks the wallpaper",
+    text: "The service sends back one word for the conditions, like <b>Clear</b>, <b>Rain</b> or <b>Mist</b>. This function reads that word and swaps the whole page background to a matching photo. The highlighted line is the one that ran for the last search.",
+    parts: [["script.js", 23, 50]], hit: "main" },
+  { tab: "3. Icons", title: "The icon comes from a code in the data",
+    text: "Along with the word, the service sends a short icon code such as <b>10n</b> (rain, night). The app drops that code straight into an image address, so the icon always matches the conditions and whether it is day or night there.",
+    parts: [["script.js", 90, 95]], hit: "icon" },
+  { tab: "4. Sunrise math", title: "Sunrise and sunset in the city's own time",
+    text: "Sunrise and sunset arrive as one long number: seconds counted from 1970. The app adds that city's offset from universal time, then formats it as a clock time. So Tokyo shows Tokyo time, not the time on this computer.",
+    parts: [["script.js", 66, 72]] },
+  { tab: "5. Building the card", title: "The card is written fresh from the data",
+    text: "Every <code>${...}</code> below is a slot that gets filled from the live answer: the city name, the temperature, the low and high, feels-like and humidity. The page is rebuilt on each search.",
+    parts: [["script.js", 78, 118]] },
+  { tab: "6. Frosted glass", title: "The look: frosted glass over the photo",
+    text: "The card and the floating circles are mostly see-through white with a blur applied to whatever is behind them. That is why the look changes with every background photo without any extra code.",
+    parts: [["style.css", 42, 59]] },
+  { tab: "7. Wiring", title: "What sets it all off",
+    text: "Two lines connect it: run the search when the button is clicked, and once when the page loads. If the service has no such city, the catch shows a message instead of breaking.",
+    parts: [["script.js", 122, 130]] },
+];
+let INDEX = { cities: [] };
+
+const $ = (id) => document.getElementById(id);
+const files = {};
+const Q = new URLSearchParams(location.search);
+const FIRST = Q.get("city") || "";
+let current = Math.max(0, Math.min(6, (parseInt(Q.get("step"), 10) || 1) - 1)), last = null;
+
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+function paint(line) {
+  let h = esc(line);
+  const c = h.search(/(^|\s)\/\/ /);
+  let tail = "";
+  if (c >= 0 && !/https?:$/.test(h.slice(0, c + 1))) { tail = '<span class="c">' + h.slice(c) + "</span>"; h = h.slice(0, c); }
+  h = h.replace(/('[^']*'|"[^"]*")/g, '<span class="s">$1</span>')
+       .replace(/\b(let|function|if|else|fetch|then|catch)\b(?![^<]*<\/span>)/g, '<span class="k">$1</span>');
+  return h + tail;
+}
+function hitTest(step, line) {
+  if (!last || !step.hit) return false;
+  if (step.hit === "main") return line.includes("'" + last.main + "'");
+  if (step.hit === "icon") return line.includes("openweathermap.org/img");
+  return false;
+}
+function render() {
+  const s = STEPS[current];
+  let html = "<h3>" + s.title + "</h3><p>" + s.text + "</p>";
+  for (const [name, a, b] of s.parts) {
+    const lines = (files[name] || "").split("\n").slice(a - 1, b);
+    html += '<p class="file">' + name + ", lines " + a + " to " + b + "</p><pre>";
+    lines.forEach((ln, i) => {
+      html += '<span class="ln' + (hitTest(s, ln) ? " hit" : "") + '"><i>' + (a + i) + "</i>" + paint(ln) + "</span>";
+    });
+    html += "</pre>";
+  }
+  $("step").innerHTML = html;
+  [...$("tabs").children].forEach((b, i) => b.setAttribute("aria-selected", i === current));
+  const hit = $("step").querySelector(".hit");
+  const box = $("step"); box.scrollTop = 0;
+  if (hit && getComputedStyle(box).overflowY !== "visible") {
+    const r = hit.getBoundingClientRect(), b = box.getBoundingClientRect();
+    if (r.bottom > b.bottom) box.scrollTop += r.bottom - b.bottom + 48;
+  }
+}
+function clock(unix, offset) {
+  const d = new Date((unix + offset) * 1000);
+  let h = d.getUTCHours(); const m = String(d.getUTCMinutes()).padStart(2, "0");
+  const ap = h >= 12 ? "pm" : "am"; h = h % 12 || 12;
+  return h + ":" + m + " " + ap;
+}
+function ago(unix) {
+  const m = Math.max(0, Math.round((Date.now() / 1000 - unix) / 60));
+  if (m < 60) return m + " min ago";
+  const h = Math.floor(m / 60);
+  return h < 48 ? h + " hr " + (m % 60) + " min ago" : Math.floor(h / 24) + " days ago";
+}
+function showFacts(d, bg) {
+  const w = d.weather[0];
+  const off = d.timezone / 3600;
+  $("facts").innerHTML =
+    "<dt>Asked for</dt><dd>" + esc(d.name) + ", " + esc(d.sys.country || "") + " <code>api.openweathermap.org/data/2.5/weather</code></dd>" +
+    "<dt>Reading</dt><dd>taken " + ago(d.dt) + " (saved copy of the service's real answer)</dd>" +
+    "<dt>Conditions</dt><dd><code>weather[0].main = \"" + esc(w.main) + "\"</code> (" + esc(w.description) + ")</dd>" +
+    "<dt>Background</dt><dd>" + (bg ? '<img class="thumb" src="' + bg + '" alt="">' : "") + "picked by the word \"" + esc(w.main) + "\"</dd>" +
+    "<dt>Icon</dt><dd><img src=\"https://openweathermap.org/img/w/" + esc(w.icon) + ".png\" alt=\"\"><code>icon = \"" + esc(w.icon) + "\"</code></dd>" +
+    "<dt>Temperature</dt><dd>" + Math.trunc(d.main.temp) + "° now, feels like " + Math.trunc(d.main.feels_like) + "°, humidity " + d.main.humidity + "</dd>" +
+    "<dt>Sunrise</dt><dd><code>" + d.sys.sunrise + "</code> + offset " + (off >= 0 ? "+" : "") + off + "h = " + clock(d.sys.sunrise, d.timezone) + " there</dd>";
+  const dot = $("dot"); dot.classList.remove("pulse"); void dot.offsetWidth; dot.classList.add("pulse");
+}
+
+function fit() {
+  const st = $("stage"), f = $("app");
+  const k = Math.min(1, st.clientWidth / 1060);
+  if (window.matchMedia("(max-width: 900px)").matches) st.style.height = Math.round(780 * k) + "px"; else st.style.height = "";
+  f.style.width = Math.max(1368, st.clientWidth / k) + "px";
+  f.style.height = st.clientHeight / k + "px";
+  f.style.transform = "scale(" + k + ")";
+}
+window.addEventListener("resize", fit);
+
+function hook() {
+  const w = $("app").contentWindow;
+  if (!w || w.__hooked) return;
+  w.__hooked = true;
+  const real = w.fetch.bind(w);
+  w.fetch = (...a) => saved(String(a[0]), real).then((resp) => {
+    resp.clone().json().then((d) => {
+      if (!d || !d.weather) return;
+      last = { main: d.weather[0].main, icon: d.weather[0].icon };
+      setTimeout(() => {
+        const m = /url\(["']?(.*?)["']?\)/.exec(w.document.body.style.backgroundImage || "");
+        showFacts(d, m ? m[1].trim() : "");
+        render();
+      }, 60);
+    }).catch(() => {});
+    return resp;
+  });
+}
+function saved(url, real) {
+  if (!url.includes("api.openweathermap.org")) return real(url);
+  const q = (new URL(url).searchParams.get("q") || "").trim().toLowerCase();
+  const hit = INDEX.cities.find((c) => c.city.toLowerCase() === q);
+  if (!hit) {
+    $("facts").innerHTML = "<dt>Not here</dt><dd>This public copy carries " + INDEX.cities.length + " cities, picked ahead of time. The original app looks up any city live. Try one of the buttons under the app.</dd>";
+    return Promise.resolve(new Response(JSON.stringify({ cod: "404", message: "city not found" }), { headers: { "Content-Type": "application/json" } }));
+  }
+  return real("../data/" + hit.slug + ".json?t=" + Date.now()).then((r) => r.json())
+    .then((d) => new Response(JSON.stringify(d), { headers: { "Content-Type": "application/json" } }));
+}
+function search(city) {
+  const w = $("app").contentWindow;
+  hook();
+  w.document.getElementById("city").value = city;
+  w.document.getElementById("search-btn").click();
+}
+
+function chips() {
+  const seen = new Set(), first = [], rest = [];
+  INDEX.cities.forEach((c) => (seen.has(c.main) ? rest : (seen.add(c.main), first)).push(c));
+  first.concat(rest).forEach((c) => {
+    const b = document.createElement("button"); b.textContent = c.city; b.onclick = () => search(c.city);
+    $("cities").appendChild(b);
+  });
+}
+STEPS.forEach((s, i) => {
+  const b = document.createElement("button"); b.textContent = s.tab; b.setAttribute("role", "tab");
+  b.onclick = () => { current = i; render(); };
+  $("tabs").appendChild(b);
+});
+
+const ready = fetch("data/index.json?t=" + Date.now()).then((r) => r.json()).then((d) => { INDEX = d; chips(); }).catch(() => {});
+Promise.all(["script.js", "style.css"].map((n) => fetch("app/" + n).then((r) => r.text()).then((t) => { files[n] = t; })))
+  .then(render)
+  .catch(() => { $("step").innerHTML = "<p>Could not read the code files. Reload the page.</p>"; });
+
+fit();
+let started = false;
+function start() { fit(); hook(); if (started) return; started = true; ready.then(() => setTimeout(() => search(FIRST || (INDEX.cities[0] || {}).city || "Chicago"), 400)); }
+$("app").addEventListener("load", start);
+if ($("app").contentDocument && $("app").contentDocument.readyState === "complete") start();
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+ "coord": {
+  "lon": -157.8583,
+  "lat": 21.3069
+ },
+ "weather": [
+  {
+   "id": 803,
+   "main": "Clouds",
+   "description": "broken clouds",
+   "icon": "04d"
+  }
+ ],
+ "base": "stations",
+ "main": {
+  "temp": 78.19,
+  "feels_like": 79.29,
+  "temp_min": 75.88,
+  "temp_max": 80.42,
+  "pressure": 1019,
+  "humidity": 76,
+  "sea_level": 1019,
+  "grnd_level": 1017
+ },
+ "visibility": 10000,
+ "wind": {
+  "speed": 17.27,
+  "deg": 50,
+  "gust": 23.02
+ },
+ "clouds": {
+  "all": 75
+ },
+ "dt": 1794884700,
+ "sys": {
+  "type": 1,
+  "id": 7878,
+  "country": "US",
+  "sunrise": 1794847389,
+  "sunset": 1794887377
+ },
+ "timezone": -36000,
+ "id": 5856195,
+ "name": "Honolulu",
+ "cod": 200
+}

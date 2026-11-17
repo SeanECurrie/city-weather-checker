@@ -1,0 +1,45 @@
+{
+ "coord": {
+  "lon": -149.9003,
+  "lat": 61.2181
+ },
+ "weather": [
+  {
+   "id": 802,
+   "main": "Clouds",
+   "description": "scattered clouds",
+   "icon": "03n"
+  }
+ ],
+ "base": "stations",
+ "main": {
+  "temp": 27.43,
+  "feels_like": 27.43,
+  "temp_min": 26.1,
+  "temp_max": 31.5,
+  "pressure": 991,
+  "humidity": 89,
+  "sea_level": 991,
+  "grnd_level": 988
+ },
+ "visibility": 10000,
+ "wind": {
+  "speed": 0,
+  "deg": 0
+ },
+ "clouds": {
+  "all": 40
+ },
+ "dt": 1794884308,
+ "sys": {
+  "type": 2,
+  "id": 2008005,
+  "country": "US",
+  "sunrise": 1794852525,
+  "sunset": 1794878421
+ },
+ "timezone": -32400,
+ "id": 5879400,
+ "name": "Anchorage",
+ "cod": 200
+}
