@@ -5,35 +5,35 @@
  },
  "weather": [
   {
-   "id": 701,
-   "main": "Mist",
-   "description": "mist",
-   "icon": "50d"
+   "id": 721,
+   "main": "Haze",
+   "description": "haze",
+   "icon": "50n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 55.33,
-  "feels_like": 54.99,
-  "temp_min": 55.33,
-  "temp_max": 60.89,
-  "pressure": 1016,
-  "humidity": 94,
-  "sea_level": 1016,
-  "grnd_level": 991
+  "temp": 75.29,
+  "feels_like": 74.16,
+  "temp_min": 75.29,
+  "temp_max": 75.29,
+  "pressure": 1015,
+  "humidity": 35,
+  "sea_level": 1015,
+  "grnd_level": 988
  },
- "visibility": 2000,
+ "visibility": 3500,
  "wind": {
   "speed": 5.75,
-  "deg": 240
+  "deg": 260
  },
  "clouds": {
   "all": 0
  },
- "dt": 1794885355,
+ "dt": 1794917912,
  "sys": {
   "type": 1,
-  "id": 9161,
+  "id": 9165,
   "country": "IN",
   "sunrise": 1794878115,
   "sunset": 1794916623
