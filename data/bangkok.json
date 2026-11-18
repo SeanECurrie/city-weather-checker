@@ -8,33 +8,33 @@
    "id": 803,
    "main": "Clouds",
    "description": "broken clouds",
-   "icon": "04n"
+   "icon": "04d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 83.64,
-  "feels_like": 93,
-  "temp_min": 80.49,
-  "temp_max": 83.93,
-  "pressure": 1012,
-  "humidity": 80,
-  "sea_level": 1012,
-  "grnd_level": 1012
+  "temp": 87.69,
+  "feels_like": 97.32,
+  "temp_min": 87.69,
+  "temp_max": 87.93,
+  "pressure": 1015,
+  "humidity": 66,
+  "sea_level": 1015,
+  "grnd_level": 1014
  },
  "visibility": 10000,
  "wind": {
-  "speed": 0.89,
-  "deg": 200,
-  "gust": 0.89
+  "speed": 3.56,
+  "deg": 25,
+  "gust": 3.83
  },
  "clouds": {
-  "all": 76
+  "all": 67
  },
- "dt": 1794950136,
+ "dt": 1794971244,
  "sys": {
-  "type": 2,
-  "id": 2112373,
+  "type": 1,
+  "id": 9235,
   "country": "TH",
   "sunrise": 1794957540,
   "sunset": 1794998838
