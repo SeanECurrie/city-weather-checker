@@ -8,32 +8,29 @@
    "id": 800,
    "main": "Clear",
    "description": "clear sky",
-   "icon": "01n"
+   "icon": "01d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 48.34,
-  "feels_like": 43.86,
-  "temp_min": 46.42,
-  "temp_max": 50.02,
-  "pressure": 979,
-  "humidity": 96,
-  "sea_level": 979,
-  "grnd_level": 975
+  "temp": 52.43,
+  "feels_like": 51.42,
+  "temp_min": 50.95,
+  "temp_max": 54.32,
+  "pressure": 980,
+  "humidity": 86,
+  "sea_level": 980,
+  "grnd_level": 976
  },
  "visibility": 10000,
  "wind": {
-  "speed": 10.36,
-  "deg": 210
- },
- "rain": {
-  "1h": 0.1
+  "speed": 20.71,
+  "deg": 220
  },
  "clouds": {
   "all": 0
  },
- "dt": 1794971241,
+ "dt": 1795003969,
  "sys": {
   "type": 2,
   "id": 2004886,
