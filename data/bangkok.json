@@ -13,31 +13,31 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 89.69,
-  "feels_like": 97.86,
-  "temp_min": 86.92,
-  "temp_max": 91.29,
+  "temp": 82.29,
+  "feels_like": 88.2,
+  "temp_min": 82.29,
+  "temp_max": 84.09,
   "pressure": 1012,
-  "humidity": 58,
+  "humidity": 75,
   "sea_level": 1012,
   "grnd_level": 1012
  },
  "visibility": 10000,
  "wind": {
-  "speed": 4.92,
-  "deg": 37,
-  "gust": 9.53
+  "speed": 4.63,
+  "deg": 5,
+  "gust": 8.19
  },
  "clouds": {
-  "all": 80
+  "all": 82
  },
- "dt": 1795003705,
+ "dt": 1795035029,
  "sys": {
   "type": 1,
   "id": 9235,
   "country": "TH",
-  "sunrise": 1794957540,
-  "sunset": 1794998838
+  "sunrise": 1795043969,
+  "sunset": 1795085236
  },
  "timezone": 25200,
  "id": 1609350,

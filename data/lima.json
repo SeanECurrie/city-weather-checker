@@ -5,35 +5,35 @@
  },
  "weather": [
   {
-   "id": 804,
-   "main": "Clouds",
-   "description": "overcast clouds",
-   "icon": "04d"
+   "id": 800,
+   "main": "Clear",
+   "description": "clear sky",
+   "icon": "01d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 74.75,
-  "feels_like": 75.83,
-  "temp_min": 74.12,
-  "temp_max": 75.45,
-  "pressure": 1013,
-  "humidity": 83,
-  "sea_level": 1013,
-  "grnd_level": 987
+  "temp": 80.85,
+  "feels_like": 84.2,
+  "temp_min": 80.85,
+  "temp_max": 80.85,
+  "pressure": 1009,
+  "humidity": 69,
+  "sea_level": 1009,
+  "grnd_level": 983
  },
  "visibility": 10000,
  "wind": {
-  "speed": 16.11,
-  "deg": 150
+  "speed": 14.97,
+  "deg": 190
  },
  "clouds": {
-  "all": 100
+  "all": 0
  },
- "dt": 1795003675,
+ "dt": 1795034914,
  "sys": {
-  "type": 2,
-  "id": 2112741,
+  "type": 1,
+  "id": 8682,
   "country": "PE",
   "sunrise": 1794997964,
   "sunset": 1795043648
