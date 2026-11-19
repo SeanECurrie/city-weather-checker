@@ -8,36 +8,35 @@
    "id": 800,
    "main": "Clear",
    "description": "clear sky",
-   "icon": "01n"
+   "icon": "01d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 65.68,
-  "feels_like": 65.66,
-  "temp_min": 64.13,
-  "temp_max": 68.95,
-  "pressure": 1008,
-  "humidity": 79,
-  "sea_level": 1008,
-  "grnd_level": 1008
+  "temp": 66.11,
+  "feels_like": 66.09,
+  "temp_min": 62.44,
+  "temp_max": 67.12,
+  "pressure": 1010,
+  "humidity": 78,
+  "sea_level": 1010,
+  "grnd_level": 1009
  },
  "visibility": 10000,
  "wind": {
-  "speed": 6.06,
-  "deg": 275,
-  "gust": 10.36
+  "speed": 3.44,
+  "deg": 0
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795055299,
+ "dt": 1795084901,
  "sys": {
   "type": 2,
   "id": 2020613,
   "country": "AR",
-  "sunrise": 1794991119,
-  "sunset": 1795041540
+  "sunrise": 1795077487,
+  "sunset": 1795127999
  },
  "timezone": -10800,
  "id": 3435910,
