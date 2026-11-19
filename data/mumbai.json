@@ -8,35 +8,35 @@
    "id": 711,
    "main": "Smoke",
    "description": "smoke",
-   "icon": "50d"
+   "icon": "50n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 91.38,
-  "feels_like": 88.29,
-  "temp_min": 87.69,
-  "temp_max": 91.38,
-  "pressure": 1012,
-  "humidity": 24,
-  "sea_level": 1012,
-  "grnd_level": 1012
+  "temp": 82.38,
+  "feels_like": 80.76,
+  "temp_min": 82.38,
+  "temp_max": 82.38,
+  "pressure": 1014,
+  "humidity": 30,
+  "sea_level": 1014,
+  "grnd_level": 1013
  },
- "visibility": 4000,
+ "visibility": 3000,
  "wind": {
-  "speed": 10.36,
-  "deg": 310
+  "speed": 9.22,
+  "deg": 60
  },
  "clouds": {
-  "all": 0
+  "all": 13
  },
- "dt": 1795084827,
+ "dt": 1795116478,
  "sys": {
   "type": 1,
   "id": 9052,
   "country": "IN",
-  "sunrise": 1795051091,
-  "sunset": 1795091397
+  "sunrise": 1795137526,
+  "sunset": 1795177789
  },
  "timezone": 19800,
  "id": 1275339,

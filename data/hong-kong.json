@@ -13,30 +13,30 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 67.44,
-  "feels_like": 66.7,
-  "temp_min": 64.96,
-  "temp_max": 68.58,
-  "pressure": 1022,
-  "humidity": 60,
-  "sea_level": 1022,
+  "temp": 65.88,
+  "feels_like": 64.62,
+  "temp_min": 64.22,
+  "temp_max": 66.78,
+  "pressure": 1023,
+  "humidity": 52,
+  "sea_level": 1023,
   "grnd_level": 1017
  },
  "visibility": 10000,
  "wind": {
-  "speed": 15.01,
-  "deg": 20
+  "speed": 18.99,
+  "deg": 10
  },
  "clouds": {
   "all": 100
  },
- "dt": 1795084850,
+ "dt": 1795116479,
  "sys": {
   "type": 2,
   "id": 9000003,
   "country": "HK",
-  "sunrise": 1795041485,
-  "sunset": 1795081171
+  "sunrise": 1795127925,
+  "sunset": 1795167559
  },
  "timezone": 28800,
  "id": 1819729,
