@@ -5,38 +5,38 @@
  },
  "weather": [
   {
-   "id": 801,
-   "main": "Clouds",
-   "description": "few clouds",
-   "icon": "02n"
+   "id": 800,
+   "main": "Clear",
+   "description": "clear sky",
+   "icon": "01n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 82.33,
-  "feels_like": 83.28,
-  "temp_min": 80.85,
-  "temp_max": 82.33,
-  "pressure": 1018,
-  "humidity": 51,
-  "sea_level": 1018,
-  "grnd_level": 1020
+  "temp": 76.93,
+  "feels_like": 77.18,
+  "temp_min": 73.65,
+  "temp_max": 76.93,
+  "pressure": 1016,
+  "humidity": 61,
+  "sea_level": 1016,
+  "grnd_level": 1017
  },
  "visibility": 10000,
  "wind": {
-  "speed": 10.36,
-  "deg": 310
+  "speed": 5.75,
+  "deg": 180
  },
  "clouds": {
-  "all": 20
+  "all": 0
  },
- "dt": 1795197572,
+ "dt": 1795218900,
  "sys": {
   "type": 1,
   "id": 7537,
   "country": "AE",
-  "sunrise": 1795142358,
-  "sunset": 1795181380
+  "sunrise": 1795228801,
+  "sunset": 1795267767
  },
  "timezone": 14400,
  "id": 292223,

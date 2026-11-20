@@ -13,31 +13,31 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 41.72,
-  "feels_like": 38.59,
+  "temp": 40.71,
+  "feels_like": 38.01,
   "temp_min": 39.72,
-  "temp_max": 43.23,
-  "pressure": 998,
-  "humidity": 69,
-  "sea_level": 998,
-  "grnd_level": 980
+  "temp_max": 41.43,
+  "pressure": 997,
+  "humidity": 66,
+  "sea_level": 997,
+  "grnd_level": 978
  },
- "visibility": 10000,
+ "visibility": 9747,
  "wind": {
-  "speed": 4.88,
-  "deg": 151,
-  "gust": 10.04
+  "speed": 4.14,
+  "deg": 129,
+  "gust": 8.5
  },
  "clouds": {
   "all": 100
  },
- "dt": 1795197571,
+ "dt": 1795218949,
  "sys": {
   "type": 2,
   "id": 2095214,
   "country": "RU",
-  "sunrise": 1795151667,
-  "sunset": 1795180563
+  "sunrise": 1795238185,
+  "sunset": 1795266875
  },
  "timezone": 10800,
  "id": 524901,
