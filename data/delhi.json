@@ -8,32 +8,32 @@
    "id": 721,
    "main": "Haze",
    "description": "haze",
-   "icon": "50d"
+   "icon": "50n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 80.53,
-  "feels_like": 80.38,
-  "temp_min": 78.89,
-  "temp_max": 80.53,
-  "pressure": 1017,
-  "humidity": 41,
-  "sea_level": 1017,
-  "grnd_level": 991
+  "temp": 64.49,
+  "feels_like": 63.84,
+  "temp_min": 64.49,
+  "temp_max": 64.49,
+  "pressure": 1018,
+  "humidity": 68,
+  "sea_level": 1018,
+  "grnd_level": 992
  },
- "visibility": 2500,
+ "visibility": 3300,
  "wind": {
-  "speed": 4.61,
-  "deg": 270
+  "speed": 2.3,
+  "deg": 0
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795165329,
+ "dt": 1795197347,
  "sys": {
   "type": 1,
-  "id": 9161,
+  "id": 9165,
   "country": "IN",
   "sunrise": 1795137461,
   "sunset": 1795175757

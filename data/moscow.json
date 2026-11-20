@@ -8,33 +8,33 @@
    "id": 804,
    "main": "Clouds",
    "description": "overcast clouds",
-   "icon": "04d"
+   "icon": "04n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 45.27,
-  "feels_like": 42.67,
-  "temp_min": 43.23,
-  "temp_max": 45.37,
+  "temp": 41.72,
+  "feels_like": 38.59,
+  "temp_min": 39.72,
+  "temp_max": 43.23,
   "pressure": 998,
-  "humidity": 82,
+  "humidity": 69,
   "sea_level": 998,
   "grnd_level": 980
  },
  "visibility": 10000,
  "wind": {
-  "speed": 4.99,
-  "deg": 196,
-  "gust": 10.92
+  "speed": 4.88,
+  "deg": 151,
+  "gust": 10.04
  },
  "clouds": {
   "all": 100
  },
- "dt": 1795165435,
+ "dt": 1795197571,
  "sys": {
   "type": 2,
-  "id": 2000314,
+  "id": 2095214,
   "country": "RU",
   "sunrise": 1795151667,
   "sunset": 1795180563
