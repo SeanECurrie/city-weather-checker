@@ -13,30 +13,30 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 82.33,
-  "feels_like": 92.52,
-  "temp_min": 80.46,
-  "temp_max": 82.92,
-  "pressure": 1014,
-  "humidity": 90,
-  "sea_level": 1014,
-  "grnd_level": 1014
+  "temp": 79.45,
+  "feels_like": 79.45,
+  "temp_min": 76.86,
+  "temp_max": 80.92,
+  "pressure": 1012,
+  "humidity": 93,
+  "sea_level": 1012,
+  "grnd_level": 1011
  },
  "visibility": 10000,
  "wind": {
-  "speed": 5.75,
-  "deg": 40
+  "speed": 1.14,
+  "deg": 60
  },
  "clouds": {
   "all": 75
  },
- "dt": 1795274210,
+ "dt": 1795294982,
  "sys": {
   "type": 1,
   "id": 9470,
   "country": "SG",
-  "sunrise": 1795214931,
-  "sunset": 1795258331
+  "sunrise": 1795301348,
+  "sunset": 1795344746
  },
  "timezone": 28800,
  "id": 1880252,
