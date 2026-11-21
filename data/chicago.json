@@ -8,29 +8,29 @@
    "id": 801,
    "main": "Clouds",
    "description": "few clouds",
-   "icon": "02n"
+   "icon": "02d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 56.97,
-  "feels_like": 55.6,
-  "temp_min": 54.55,
-  "temp_max": 59.04,
-  "pressure": 1019,
-  "humidity": 69,
-  "sea_level": 1019,
-  "grnd_level": 997
+  "temp": 58.05,
+  "feels_like": 56.32,
+  "temp_min": 56.12,
+  "temp_max": 59.18,
+  "pressure": 1018,
+  "humidity": 59,
+  "sea_level": 1018,
+  "grnd_level": 996
  },
  "visibility": 10000,
  "wind": {
-  "speed": 9.22,
-  "deg": 180
+  "speed": 8.05,
+  "deg": 200
  },
  "clouds": {
   "all": 20
  },
- "dt": 1795244004,
+ "dt": 1795274246,
  "sys": {
   "type": 2,
   "id": 2075214,
