@@ -8,35 +8,35 @@
    "id": 800,
    "main": "Clear",
    "description": "clear sky",
-   "icon": "01d"
+   "icon": "01n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 65.93,
-  "feels_like": 65.28,
-  "temp_min": 64.9,
-  "temp_max": 68.27,
+  "temp": 62.42,
+  "feels_like": 61.79,
+  "temp_min": 61.92,
+  "temp_max": 64.27,
   "pressure": 1017,
-  "humidity": 65,
+  "humidity": 73,
   "sea_level": 1017,
-  "grnd_level": 1015
+  "grnd_level": 1016
  },
  "visibility": 10000,
  "wind": {
-  "speed": 19.57,
-  "deg": 170
+  "speed": 14.97,
+  "deg": 180
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795367137,
+ "dt": 1795386478,
  "sys": {
   "type": 2,
   "id": 2073005,
   "country": "ZA",
-  "sunrise": 1795318269,
-  "sunset": 1795368837
+  "sunrise": 1795404644,
+  "sunset": 1795455295
  },
  "timezone": 7200,
  "id": 3369157,

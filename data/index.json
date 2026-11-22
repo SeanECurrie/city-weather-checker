@@ -1,221 +1,221 @@
 {
- "refreshed": 1795367140,
+ "refreshed": 1795386481,
  "cities": [
   {
    "city": "Chicago",
    "slug": "chicago",
    "main": "Clouds",
-   "dt": 1795367010
+   "dt": 1795386088
   },
   {
    "city": "New York",
    "slug": "new-york",
    "main": "Mist",
-   "dt": 1795366291
+   "dt": 1795386341
   },
   {
    "city": "Los Angeles",
    "slug": "los-angeles",
    "main": "Clear",
-   "dt": 1795366715
+   "dt": 1795386246
   },
   {
    "city": "Seattle",
    "slug": "seattle",
    "main": "Clouds",
-   "dt": 1795366601
+   "dt": 1795385881
   },
   {
    "city": "Miami",
    "slug": "miami",
    "main": "Clouds",
-   "dt": 1795366800
+   "dt": 1795385962
   },
   {
    "city": "Denver",
    "slug": "denver",
    "main": "Clouds",
-   "dt": 1795366795
+   "dt": 1795385890
   },
   {
    "city": "Phoenix",
    "slug": "phoenix",
    "main": "Clouds",
-   "dt": 1795366575
+   "dt": 1795386311
   },
   {
    "city": "Anchorage",
    "slug": "anchorage",
    "main": "Clouds",
-   "dt": 1795366608
+   "dt": 1795386284
   },
   {
    "city": "Honolulu",
    "slug": "honolulu",
-   "main": "Rain",
-   "dt": 1795366771
+   "main": "Clouds",
+   "dt": 1795386358
   },
   {
    "city": "Toronto",
    "slug": "toronto",
    "main": "Clouds",
-   "dt": 1795366443
+   "dt": 1795386238
   },
   {
    "city": "Vancouver",
    "slug": "vancouver",
    "main": "Clouds",
-   "dt": 1795366880
+   "dt": 1795386200
   },
   {
    "city": "Mexico City",
    "slug": "mexico-city",
-   "main": "Clouds",
-   "dt": 1795367133
+   "main": "Rain",
+   "dt": 1795386308
   },
   {
    "city": "Lima",
    "slug": "lima",
    "main": "Clouds",
-   "dt": 1795366941
+   "dt": 1795386476
   },
   {
    "city": "Sao Paulo",
    "slug": "sao-paulo",
-   "main": "Clouds",
-   "dt": 1795367133
+   "main": "Thunderstorm",
+   "dt": 1795386346
   },
   {
    "city": "Buenos Aires",
    "slug": "buenos-aires",
    "main": "Clear",
-   "dt": 1795366843
+   "dt": 1795386331
   },
   {
    "city": "London",
    "slug": "london",
    "main": "Clouds",
-   "dt": 1795366847
+   "dt": 1795385741
   },
   {
    "city": "Paris",
    "slug": "paris",
-   "main": "Mist",
-   "dt": 1795367134
+   "main": "Drizzle",
+   "dt": 1795386261
   },
   {
    "city": "Berlin",
    "slug": "berlin",
    "main": "Clouds",
-   "dt": 1795366859
+   "dt": 1795386350
   },
   {
    "city": "Oslo",
    "slug": "oslo",
-   "main": "Clear",
-   "dt": 1795367135
+   "main": "Clouds",
+   "dt": 1795386477
   },
   {
    "city": "Reykjavik",
    "slug": "reykjavik",
    "main": "Rain",
-   "dt": 1795367135
+   "dt": 1795386477
   },
   {
    "city": "Moscow",
    "slug": "moscow",
    "main": "Clouds",
-   "dt": 1795366923
+   "dt": 1795386184
   },
   {
    "city": "Cairo",
    "slug": "cairo",
    "main": "Clear",
-   "dt": 1795366891
+   "dt": 1795386478
   },
   {
    "city": "Lagos",
    "slug": "lagos",
-   "main": "Clouds",
-   "dt": 1795367136
+   "main": "Clear",
+   "dt": 1795386478
   },
   {
    "city": "Nairobi",
    "slug": "nairobi",
    "main": "Clouds",
-   "dt": 1795366946
+   "dt": 1795386352
   },
   {
    "city": "Cape Town",
    "slug": "cape-town",
    "main": "Clear",
-   "dt": 1795367137
+   "dt": 1795386478
   },
   {
    "city": "Dubai",
    "slug": "dubai",
    "main": "Clear",
-   "dt": 1795367137
+   "dt": 1795386479
   },
   {
    "city": "Mumbai",
    "slug": "mumbai",
-   "main": "Smoke",
-   "dt": 1795366964
+   "main": "Haze",
+   "dt": 1795386445
   },
   {
    "city": "Delhi",
    "slug": "delhi",
    "main": "Mist",
-   "dt": 1795367138
+   "dt": 1795386402
   },
   {
    "city": "Bangkok",
    "slug": "bangkok",
    "main": "Clouds",
-   "dt": 1795367138
+   "dt": 1795386444
   },
   {
    "city": "Singapore",
    "slug": "singapore",
    "main": "Clouds",
-   "dt": 1795366907
+   "dt": 1795386480
   },
   {
    "city": "Hong Kong",
    "slug": "hong-kong",
    "main": "Clouds",
-   "dt": 1795367139
+   "dt": 1795386239
   },
   {
    "city": "Tokyo",
    "slug": "tokyo",
-   "main": "Clear",
-   "dt": 1795367139
+   "main": "Clouds",
+   "dt": 1795386309
   },
   {
    "city": "Seoul",
    "slug": "seoul",
-   "main": "Clear",
-   "dt": 1795367139
+   "main": "Clouds",
+   "dt": 1795386445
   },
   {
    "city": "Beijing",
    "slug": "beijing",
-   "main": "Clouds",
-   "dt": 1795366538
+   "main": "Clear",
+   "dt": 1795386351
   },
   {
    "city": "Sydney",
    "slug": "sydney",
-   "main": "Rain",
-   "dt": 1795366870
+   "main": "Clouds",
+   "dt": 1795386481
   },
   {
    "city": "Auckland",
    "slug": "auckland",
    "main": "Clouds",
-   "dt": 1795366973
+   "dt": 1795386223
   }
  ]
 }
