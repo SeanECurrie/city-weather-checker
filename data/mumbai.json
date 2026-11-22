@@ -8,29 +8,29 @@
    "id": 711,
    "main": "Smoke",
    "description": "smoke",
-   "icon": "50d"
+   "icon": "50n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 91.38,
-  "feels_like": 90.41,
-  "temp_min": 85.89,
-  "temp_max": 91.38,
-  "pressure": 1014,
-  "humidity": 33,
-  "sea_level": 1014,
-  "grnd_level": 1013
+  "temp": 82.38,
+  "feels_like": 84.4,
+  "temp_min": 82.38,
+  "temp_max": 82.38,
+  "pressure": 1016,
+  "humidity": 57,
+  "sea_level": 1016,
+  "grnd_level": 1015
  },
  "visibility": 2500,
  "wind": {
-  "speed": 5.75,
-  "deg": 280
+  "speed": 4.61,
+  "deg": 150
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795337121,
+ "dt": 1795366964,
  "sys": {
   "type": 1,
   "id": 9052,

@@ -8,17 +8,17 @@
    "id": 803,
    "main": "Clouds",
    "description": "broken clouds",
-   "icon": "04n"
+   "icon": "04d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 54.97,
-  "feels_like": 52.47,
-  "temp_min": 53.06,
-  "temp_max": 56.91,
+  "temp": 58.55,
+  "feels_like": 56.32,
+  "temp_min": 56.28,
+  "temp_max": 62.06,
   "pressure": 1017,
-  "humidity": 49,
+  "humidity": 47,
   "sea_level": 1017,
   "grnd_level": 975
  },
@@ -30,10 +30,10 @@
  "clouds": {
   "all": 75
  },
- "dt": 1795336899,
+ "dt": 1795366575,
  "sys": {
-  "type": 1,
-  "id": 5347,
+  "type": 2,
+  "id": 2008537,
   "country": "US",
   "sunrise": 1795356388,
   "sunset": 1795393368

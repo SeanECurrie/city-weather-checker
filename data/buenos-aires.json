@@ -13,27 +13,28 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 61.21,
-  "feels_like": 60.57,
-  "temp_min": 57.88,
-  "temp_max": 62.33,
-  "pressure": 1010,
-  "humidity": 75,
-  "sea_level": 1010,
-  "grnd_level": 1010
+  "temp": 77.56,
+  "feels_like": 77.13,
+  "temp_min": 76.68,
+  "temp_max": 80.01,
+  "pressure": 1009,
+  "humidity": 45,
+  "sea_level": 1009,
+  "grnd_level": 1008
  },
  "visibility": 10000,
  "wind": {
-  "speed": 2.3,
-  "deg": 0
+  "speed": 8.05,
+  "deg": 230,
+  "gust": 19.57
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795337070,
+ "dt": 1795366843,
  "sys": {
-  "type": 1,
-  "id": 8224,
+  "type": 2,
+  "id": 2020613,
   "country": "AR",
   "sunrise": 1795336601,
   "sunset": 1795387376

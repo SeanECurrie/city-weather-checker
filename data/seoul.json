@@ -13,30 +13,30 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 38.77,
-  "feels_like": 36.46,
-  "temp_min": 38.77,
-  "temp_max": 38.8,
-  "pressure": 1029,
-  "humidity": 52,
-  "sea_level": 1029,
-  "grnd_level": 1019
+  "temp": 33.37,
+  "feels_like": 28.06,
+  "temp_min": 31.6,
+  "temp_max": 33.37,
+  "pressure": 1028,
+  "humidity": 80,
+  "sea_level": 1028,
+  "grnd_level": 1018
  },
  "visibility": 10000,
  "wind": {
-  "speed": 3.44,
-  "deg": 320
+  "speed": 5.75,
+  "deg": 220
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795337021,
+ "dt": 1795367139,
  "sys": {
   "type": 1,
   "id": 8105,
   "country": "KR",
-  "sunrise": 1795299527,
-  "sunset": 1795335463
+  "sunrise": 1795385989,
+  "sunset": 1795421834
  },
  "timezone": 32400,
  "id": 1835848,
