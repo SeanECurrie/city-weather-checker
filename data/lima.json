@@ -13,30 +13,30 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 76.14,
-  "feels_like": 77.11,
-  "temp_min": 74.43,
-  "temp_max": 77.25,
+  "temp": 74.23,
+  "feels_like": 75.25,
+  "temp_min": 73.13,
+  "temp_max": 75.45,
   "pressure": 1010,
-  "humidity": 78,
+  "humidity": 83,
   "sea_level": 1010,
-  "grnd_level": 985
+  "grnd_level": 984
  },
  "visibility": 10000,
  "wind": {
-  "speed": 14.97,
-  "deg": 150
+  "speed": 11.5,
+  "deg": 160
  },
  "clouds": {
   "all": 75
  },
- "dt": 1795310210,
+ "dt": 1795337043,
  "sys": {
   "type": 2,
   "id": 2112741,
   "country": "PE",
-  "sunrise": 1795257167,
-  "sunset": 1795302933
+  "sunrise": 1795343570,
+  "sunset": 1795389362
  },
  "timezone": -18000,
  "id": 3936456,
