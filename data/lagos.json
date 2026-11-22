@@ -13,29 +13,29 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 79.86,
-  "feels_like": 79.86,
-  "temp_min": 79.86,
-  "temp_max": 79.86,
-  "pressure": 1012,
-  "humidity": 88,
-  "sea_level": 1012,
-  "grnd_level": 1012
+  "temp": 78.44,
+  "feels_like": 80.22,
+  "temp_min": 78.44,
+  "temp_max": 78.44,
+  "pressure": 1011,
+  "humidity": 90,
+  "sea_level": 1011,
+  "grnd_level": 1011
  },
  "visibility": 10000,
  "wind": {
-  "speed": 3.71,
-  "deg": 201,
-  "gust": 14.09
+  "speed": 1.54,
+  "deg": 268,
+  "gust": 1.83
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795294962,
+ "dt": 1795310213,
  "sys": {
   "country": "NG",
-  "sunrise": 1795239420,
-  "sunset": 1795281898
+  "sunrise": 1795325843,
+  "sunset": 1795368308
  },
  "timezone": 3600,
  "id": 2332453,
