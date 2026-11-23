@@ -8,29 +8,29 @@
    "id": 721,
    "main": "Haze",
    "description": "haze",
-   "icon": "50n"
+   "icon": "50d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 76.98,
-  "feels_like": 77.81,
-  "temp_min": 76.98,
-  "temp_max": 76.98,
-  "pressure": 1014,
-  "humidity": 73,
-  "sea_level": 1014,
-  "grnd_level": 1013
+  "temp": 78.78,
+  "feels_like": 78.78,
+  "temp_min": 75.09,
+  "temp_max": 78.78,
+  "pressure": 1017,
+  "humidity": 57,
+  "sea_level": 1017,
+  "grnd_level": 1017
  },
- "visibility": 2200,
+ "visibility": 2100,
  "wind": {
-  "speed": 5.75,
-  "deg": 90
+  "speed": 4.61,
+  "deg": 170
  },
  "clouds": {
-  "all": 3
+  "all": 0
  },
- "dt": 1795386445,
+ "dt": 1795403107,
  "sys": {
   "type": 1,
   "id": 9052,

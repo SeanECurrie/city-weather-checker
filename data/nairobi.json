@@ -13,14 +13,14 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 63.72,
-  "feels_like": 64.49,
-  "temp_min": 63.72,
-  "temp_max": 63.72,
-  "pressure": 1018,
-  "humidity": 100,
-  "sea_level": 1018,
-  "grnd_level": 838
+  "temp": 62.47,
+  "feels_like": 62.56,
+  "temp_min": 61.92,
+  "temp_max": 62.47,
+  "pressure": 1019,
+  "humidity": 88,
+  "sea_level": 1019,
+  "grnd_level": 839
  },
  "visibility": 10000,
  "wind": {
@@ -30,10 +30,10 @@
  "clouds": {
   "all": 75
  },
- "dt": 1795386352,
+ "dt": 1795402847,
  "sys": {
   "type": 1,
-  "id": 2543,
+  "id": 2558,
   "country": "KE",
   "sunrise": 1795403628,
   "sunset": 1795447481

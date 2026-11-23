@@ -13,28 +13,27 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 66.42,
-  "feels_like": 65.95,
-  "temp_min": 66.42,
-  "temp_max": 66.42,
-  "pressure": 1020,
-  "humidity": 68,
-  "sea_level": 1020,
-  "grnd_level": 1020
+  "temp": 59.76,
+  "feels_like": 59.29,
+  "temp_min": 59.41,
+  "temp_max": 59.76,
+  "pressure": 1019,
+  "humidity": 82,
+  "sea_level": 1019,
+  "grnd_level": 1019
  },
- "visibility": 10000,
+ "visibility": 6000,
  "wind": {
-  "speed": 2.51,
-  "deg": 358,
-  "gust": 4.83
+  "speed": 6.91,
+  "deg": 70
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795386478,
+ "dt": 1795403106,
  "sys": {
-  "type": 2,
-  "id": 47682,
+  "type": 1,
+  "id": 2514,
   "country": "EG",
   "sunrise": 1795408008,
   "sunset": 1795445773
