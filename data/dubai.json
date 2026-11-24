@@ -8,35 +8,35 @@
    "id": 800,
    "main": "Clear",
    "description": "clear sky",
-   "icon": "01d"
+   "icon": "01n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 87.73,
-  "feels_like": 86.83,
-  "temp_min": 87.73,
-  "temp_max": 88.05,
-  "pressure": 1017,
-  "humidity": 37,
-  "sea_level": 1017,
+  "temp": 80.53,
+  "feels_like": 82.58,
+  "temp_min": 73.65,
+  "temp_max": 80.53,
+  "pressure": 1018,
+  "humidity": 61,
+  "sea_level": 1018,
   "grnd_level": 1020
  },
  "visibility": 10000,
  "wind": {
-  "speed": 10.36,
-  "deg": 340
+  "speed": 3.44,
+  "deg": 50
  },
  "clouds": {
   "all": 0
  },
- "dt": 1795515769,
+ "dt": 1795553513,
  "sys": {
   "type": 1,
   "id": 7537,
   "country": "AE",
-  "sunrise": 1795488133,
-  "sunset": 1795526934
+  "sunrise": 1795574577,
+  "sunset": 1795613326
  },
  "timezone": 14400,
  "id": 292223,

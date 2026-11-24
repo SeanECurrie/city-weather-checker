@@ -13,31 +13,31 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 33.69,
-  "feels_like": 29.28,
-  "temp_min": 33.69,
-  "temp_max": 33.69,
-  "pressure": 1027,
-  "humidity": 23,
-  "sea_level": 1027,
-  "grnd_level": 1022
+  "temp": 19.29,
+  "feels_like": 14.14,
+  "temp_min": 19.29,
+  "temp_max": 19.29,
+  "pressure": 1019,
+  "humidity": 46,
+  "sea_level": 1019,
+  "grnd_level": 1013
  },
  "visibility": 10000,
  "wind": {
-  "speed": 4.76,
-  "deg": 200,
-  "gust": 8.59
+  "speed": 3.49,
+  "deg": 35,
+  "gust": 5.28
  },
  "clouds": {
-  "all": 27
+  "all": 34
  },
- "dt": 1795515370,
+ "dt": 1795553515,
  "sys": {
   "type": 1,
   "id": 9609,
   "country": "CN",
-  "sunrise": 1795475342,
-  "sunset": 1795510395
+  "sunrise": 1795561808,
+  "sunset": 1795596765
  },
  "timezone": 28800,
  "id": 1816670,

@@ -5,35 +5,37 @@
  },
  "weather": [
   {
-   "id": 803,
-   "main": "Clouds",
-   "description": "broken clouds",
-   "icon": "04d"
+   "id": 500,
+   "main": "Rain",
+   "description": "light rain",
+   "icon": "10n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 70.92,
-  "feels_like": 70.9,
-  "temp_min": 70.92,
-  "temp_max": 70.92,
-  "pressure": 1015,
-  "humidity": 68,
-  "sea_level": 1015,
-  "grnd_level": 841
+  "temp": 62.04,
+  "feels_like": 62.31,
+  "temp_min": 62.04,
+  "temp_max": 62.04,
+  "pressure": 1019,
+  "humidity": 93,
+  "sea_level": 1019,
+  "grnd_level": 840
  },
  "visibility": 10000,
  "wind": {
-  "speed": 8.05,
-  "deg": 40
+  "speed": 9.37,
+  "deg": 61,
+  "gust": 17.69
+ },
+ "rain": {
+  "1h": 0.13
  },
  "clouds": {
-  "all": 75
+  "all": 66
  },
- "dt": 1795515838,
+ "dt": 1795553469,
  "sys": {
-  "type": 1,
-  "id": 2543,
   "country": "KE",
   "sunrise": 1795490044,
   "sunset": 1795533900
