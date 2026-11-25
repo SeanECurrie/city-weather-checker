@@ -5,41 +5,38 @@
  },
  "weather": [
   {
-   "id": 500,
-   "main": "Rain",
-   "description": "light rain",
-   "icon": "10d"
+   "id": 801,
+   "main": "Clouds",
+   "description": "few clouds",
+   "icon": "02n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 76.68,
-  "feels_like": 77.99,
-  "temp_min": 75.06,
-  "temp_max": 77.54,
-  "pressure": 1010,
-  "humidity": 84,
-  "sea_level": 1010,
-  "grnd_level": 922
+  "temp": 73.02,
+  "feels_like": 74.35,
+  "temp_min": 72.45,
+  "temp_max": 74.14,
+  "pressure": 1014,
+  "humidity": 92,
+  "sea_level": 1014,
+  "grnd_level": 924
  },
  "visibility": 10000,
  "wind": {
-  "speed": 9.22,
-  "deg": 350
- },
- "rain": {
-  "1h": 0.57
+  "speed": 10.36,
+  "deg": 20
  },
  "clouds": {
-  "all": 40
+  "all": 20
  },
- "dt": 1795553415,
+ "dt": 1795579640,
  "sys": {
-  "type": 1,
-  "id": 8394,
+  "type": 2,
+  "id": 2004268,
   "country": "BR",
-  "sunrise": 1795507911,
-  "sunset": 1795556097
+  "sunrise": 1795594305,
+  "sunset": 1795642540
  },
  "timezone": -10800,
  "id": 3448439,

@@ -8,29 +8,29 @@
    "id": 701,
    "main": "Mist",
    "description": "mist",
-   "icon": "50n"
+   "icon": "50d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 57.13,
-  "feels_like": 56.68,
-  "temp_min": 57.13,
-  "temp_max": 60.89,
-  "pressure": 1018,
-  "humidity": 88,
-  "sea_level": 1018,
-  "grnd_level": 992
+  "temp": 60.73,
+  "feels_like": 59.88,
+  "temp_min": 60.73,
+  "temp_max": 64.49,
+  "pressure": 1021,
+  "humidity": 72,
+  "sea_level": 1021,
+  "grnd_level": 995
  },
  "visibility": 3000,
  "wind": {
-  "speed": 3.44,
-  "deg": 250
+  "speed": 5.75,
+  "deg": 240
  },
  "clouds": {
-  "all": 24
+  "all": 26
  },
- "dt": 1795553227,
+ "dt": 1795579577,
  "sys": {
   "type": 1,
   "id": 9161,
