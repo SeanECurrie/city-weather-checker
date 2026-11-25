@@ -5,47 +5,41 @@
  },
  "weather": [
   {
-   "id": 211,
-   "main": "Thunderstorm",
-   "description": "thunderstorm",
-   "icon": "11n"
-  },
-  {
-   "id": 502,
+   "id": 501,
    "main": "Rain",
-   "description": "heavy intensity rain",
-   "icon": "10n"
+   "description": "moderate rain",
+   "icon": "10d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 84.07,
-  "feels_like": 96.58,
-  "temp_min": 82.26,
-  "temp_max": 84.15,
+  "temp": 78.6,
+  "feels_like": 80.35,
+  "temp_min": 76.91,
+  "temp_max": 78.93,
   "pressure": 1012,
-  "humidity": 86,
+  "humidity": 89,
   "sea_level": 1012,
   "grnd_level": 1011
  },
  "visibility": 10000,
  "wind": {
-  "speed": 3.44,
-  "deg": 340
+  "speed": 4.61,
+  "deg": 260
  },
  "rain": {
-  "1h": 4.21
+  "1h": 1.73
  },
  "clouds": {
   "all": 75
  },
- "dt": 1795618441,
+ "dt": 1795649746,
  "sys": {
   "type": 1,
   "id": 9470,
   "country": "SG",
-  "sunrise": 1795560602,
-  "sunset": 1795603994
+  "sunrise": 1795647021,
+  "sunset": 1795690412
  },
  "timezone": 28800,
  "id": 1880252,

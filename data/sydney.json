@@ -8,33 +8,32 @@
    "id": 803,
    "main": "Clouds",
    "description": "broken clouds",
-   "icon": "04n"
+   "icon": "04d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 64.45,
-  "feels_like": 64.45,
-  "temp_min": 61.63,
-  "temp_max": 66.69,
-  "pressure": 1024,
-  "humidity": 82,
-  "sea_level": 1024,
-  "grnd_level": 1018
+  "temp": 72.09,
+  "feels_like": 72.34,
+  "temp_min": 70.38,
+  "temp_max": 74.32,
+  "pressure": 1025,
+  "humidity": 71,
+  "sea_level": 1025,
+  "grnd_level": 1020
  },
  "visibility": 10000,
  "wind": {
-  "speed": 1.01,
-  "deg": 314,
-  "gust": 1.99
+  "speed": 8.05,
+  "deg": 30
  },
  "clouds": {
-  "all": 80
+  "all": 75
  },
- "dt": 1795618347,
+ "dt": 1795649748,
  "sys": {
   "type": 2,
-  "id": 2091046,
+  "id": 2018875,
   "country": "AU",
   "sunrise": 1795631929,
   "sunset": 1795682768

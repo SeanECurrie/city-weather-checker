@@ -13,30 +13,30 @@
  ],
  "base": "stations",
  "main": {
-  "temp": 85.98,
-  "feels_like": 87.31,
-  "temp_min": 81.95,
-  "temp_max": 85.98,
-  "pressure": 1014,
-  "humidity": 48,
-  "sea_level": 1014,
-  "grnd_level": 1014
+  "temp": 80.58,
+  "feels_like": 82.65,
+  "temp_min": 77.95,
+  "temp_max": 80.58,
+  "pressure": 1013,
+  "humidity": 61,
+  "sea_level": 1013,
+  "grnd_level": 1012
  },
- "visibility": 3000,
+ "visibility": 2500,
  "wind": {
-  "speed": 4.61,
-  "deg": 350
+  "speed": 3.44,
+  "deg": 170
  },
  "clouds": {
-  "all": 9
+  "all": 15
  },
- "dt": 1795618440,
+ "dt": 1795649693,
  "sys": {
   "type": 1,
   "id": 9052,
   "country": "IN",
-  "sunrise": 1795569708,
-  "sunset": 1795609773
+  "sunrise": 1795656145,
+  "sunset": 1795696173
  },
  "timezone": 19800,
  "id": 1275339,

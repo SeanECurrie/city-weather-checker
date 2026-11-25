@@ -8,33 +8,33 @@
    "id": 500,
    "main": "Rain",
    "description": "light rain",
-   "icon": "10n"
+   "icon": "10d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 56.7,
-  "feels_like": 55.11,
-  "temp_min": 51.64,
-  "temp_max": 58.32,
-  "pressure": 1014,
-  "humidity": 65,
-  "sea_level": 1014,
-  "grnd_level": 1013
+  "temp": 55.11,
+  "feels_like": 54.18,
+  "temp_min": 51.44,
+  "temp_max": 57.88,
+  "pressure": 1016,
+  "humidity": 82,
+  "sea_level": 1016,
+  "grnd_level": 1014
  },
- "visibility": 10000,
+ "visibility": 9909,
  "wind": {
-  "speed": 16.11,
-  "deg": 170,
-  "gust": 26.46
+  "speed": 5.99,
+  "deg": 86,
+  "gust": 11.01
  },
  "rain": {
-  "1h": 0.15
+  "1h": 0.89
  },
  "clouds": {
   "all": 100
  },
- "dt": 1795618103,
+ "dt": 1795649737,
  "sys": {
   "type": 2,
   "id": 2009669,
