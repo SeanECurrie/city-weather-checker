@@ -8,32 +8,32 @@
    "id": 804,
    "main": "Clouds",
    "description": "overcast clouds",
-   "icon": "04d"
+   "icon": "04n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 68.07,
-  "feels_like": 66.88,
-  "temp_min": 64.96,
-  "temp_max": 69.82,
+  "temp": 64.78,
+  "feels_like": 64.44,
+  "temp_min": 61.95,
+  "temp_max": 66.22,
   "pressure": 1022,
-  "humidity": 49,
+  "humidity": 74,
   "sea_level": 1022,
-  "grnd_level": 1017
+  "grnd_level": 1016
  },
  "visibility": 10000,
  "wind": {
-  "speed": 15.01,
-  "deg": 360
+  "speed": 8.99,
+  "deg": 40
  },
  "clouds": {
-  "all": 90
+  "all": 100
  },
- "dt": 1795579644,
+ "dt": 1795618335,
  "sys": {
   "type": 2,
-  "id": 9000003,
+  "id": 9000002,
   "country": "HK",
   "sunrise": 1795560125,
   "sunset": 1795599522
