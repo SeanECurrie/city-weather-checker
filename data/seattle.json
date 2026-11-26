@@ -5,48 +5,42 @@
  },
  "weather": [
   {
-   "id": 501,
+   "id": 500,
    "main": "Rain",
-   "description": "moderate rain",
-   "icon": "10n"
-  },
-  {
-   "id": 701,
-   "main": "Mist",
-   "description": "mist",
-   "icon": "50n"
+   "description": "light rain",
+   "icon": "10d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 51.15,
-  "feels_like": 50.29,
-  "temp_min": 48.88,
-  "temp_max": 52.68,
-  "pressure": 1014,
-  "humidity": 92,
-  "sea_level": 1014,
-  "grnd_level": 1012
+  "temp": 52.47,
+  "feels_like": 51.55,
+  "temp_min": 49.71,
+  "temp_max": 54.37,
+  "pressure": 1013,
+  "humidity": 88,
+  "sea_level": 1013,
+  "grnd_level": 1011
  },
- "visibility": 8047,
+ "visibility": 10000,
  "wind": {
-  "speed": 11.01,
-  "deg": 135,
-  "gust": 15.01
+  "speed": 19.57,
+  "deg": 170,
+  "gust": 31.07
  },
  "rain": {
-  "1h": 1.88
+  "1h": 0.22
  },
  "clouds": {
-  "all": 100
+  "all": 75
  },
- "dt": 1795670274,
+ "dt": 1795707408,
  "sys": {
   "type": 2,
-  "id": 2110356,
+  "id": 2009669,
   "country": "US",
-  "sunrise": 1795620547,
-  "sunset": 1795652640
+  "sunrise": 1795707028,
+  "sunset": 1795738996
  },
  "timezone": -28800,
  "id": 5809844,
