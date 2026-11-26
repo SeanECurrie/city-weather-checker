@@ -5,35 +5,35 @@
  },
  "weather": [
   {
-   "id": 803,
+   "id": 801,
    "main": "Clouds",
-   "description": "broken clouds",
-   "icon": "04d"
+   "description": "few clouds",
+   "icon": "02d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 72.09,
-  "feels_like": 72.34,
-  "temp_min": 70.38,
-  "temp_max": 74.32,
-  "pressure": 1025,
-  "humidity": 71,
-  "sea_level": 1025,
-  "grnd_level": 1020
+  "temp": 77.95,
+  "feels_like": 78.6,
+  "temp_min": 75.18,
+  "temp_max": 80.31,
+  "pressure": 1023,
+  "humidity": 67,
+  "sea_level": 1023,
+  "grnd_level": 1017
  },
  "visibility": 10000,
  "wind": {
-  "speed": 8.05,
-  "deg": 30
+  "speed": 16.11,
+  "deg": 60
  },
  "clouds": {
-  "all": 75
+  "all": 20
  },
- "dt": 1795649748,
+ "dt": 1795670868,
  "sys": {
   "type": 2,
-  "id": 2018875,
+  "id": 2091046,
   "country": "AU",
   "sunrise": 1795631929,
   "sunset": 1795682768
