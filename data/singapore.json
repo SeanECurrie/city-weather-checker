@@ -5,41 +5,38 @@
  },
  "weather": [
   {
-   "id": 501,
-   "main": "Rain",
-   "description": "moderate rain",
-   "icon": "10d"
+   "id": 803,
+   "main": "Clouds",
+   "description": "broken clouds",
+   "icon": "04n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 83.57,
-  "feels_like": 95,
-  "temp_min": 80.46,
-  "temp_max": 84.15,
-  "pressure": 1010,
-  "humidity": 86,
-  "sea_level": 1010,
-  "grnd_level": 1009
+  "temp": 82.02,
+  "feels_like": 90.16,
+  "temp_min": 78.66,
+  "temp_max": 82.35,
+  "pressure": 1012,
+  "humidity": 85,
+  "sea_level": 1012,
+  "grnd_level": 1011
  },
- "visibility": 8000,
+ "visibility": 10000,
  "wind": {
-  "speed": 8.05,
-  "deg": 30
- },
- "rain": {
-  "1h": 1.41
+  "speed": 3.44,
+  "deg": 230
  },
  "clouds": {
-  "all": 40
+  "all": 75
  },
- "dt": 1795770139,
+ "dt": 1795805648,
  "sys": {
   "type": 1,
   "id": 9470,
   "country": "SG",
-  "sunrise": 1795733442,
-  "sunset": 1795776830
+  "sunrise": 1795819862,
+  "sunset": 1795863249
  },
  "timezone": 28800,
  "id": 1880252,
