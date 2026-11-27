@@ -5,33 +5,33 @@
  },
  "weather": [
   {
-   "id": 800,
-   "main": "Clear",
-   "description": "clear sky",
-   "icon": "01n"
+   "id": 803,
+   "main": "Clouds",
+   "description": "broken clouds",
+   "icon": "04d"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 78.42,
-  "feels_like": 80.29,
-  "temp_min": 78.42,
-  "temp_max": 78.42,
-  "pressure": 1011,
-  "humidity": 92,
-  "sea_level": 1011,
-  "grnd_level": 1011
+  "temp": 89.2,
+  "feels_like": 97.83,
+  "temp_min": 89.2,
+  "temp_max": 89.2,
+  "pressure": 1013,
+  "humidity": 60,
+  "sea_level": 1013,
+  "grnd_level": 1013
  },
  "visibility": 10000,
  "wind": {
-  "speed": 2.86,
-  "deg": 197,
-  "gust": 12.77
+  "speed": 3.24,
+  "deg": 250,
+  "gust": 4.07
  },
  "clouds": {
-  "all": 0
+  "all": 60
  },
- "dt": 1795739341,
+ "dt": 1795770000,
  "sys": {
   "country": "NG",
   "sunrise": 1795757963,
