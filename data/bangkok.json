@@ -5,39 +5,39 @@
  },
  "weather": [
   {
-   "id": 804,
+   "id": 803,
    "main": "Clouds",
-   "description": "overcast clouds",
-   "icon": "04d"
+   "description": "broken clouds",
+   "icon": "04n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 88.9,
-  "feels_like": 92.19,
-  "temp_min": 86.92,
-  "temp_max": 89.91,
-  "pressure": 1012,
-  "humidity": 49,
-  "sea_level": 1012,
-  "grnd_level": 1012
+  "temp": 83.93,
+  "feels_like": 87.15,
+  "temp_min": 83.91,
+  "temp_max": 84.09,
+  "pressure": 1014,
+  "humidity": 59,
+  "sea_level": 1014,
+  "grnd_level": 1014
  },
  "visibility": 10000,
  "wind": {
-  "speed": 10.71,
-  "deg": 40,
-  "gust": 11.95
+  "speed": 6.87,
+  "deg": 68,
+  "gust": 15.14
  },
  "clouds": {
-  "all": 100
+  "all": 78
  },
- "dt": 1795860878,
+ "dt": 1795890220,
  "sys": {
   "type": 2,
-  "id": 2135671,
+  "id": 2112373,
   "country": "TH",
-  "sunrise": 1795821845,
-  "sunset": 1795862867
+  "sunrise": 1795908277,
+  "sunset": 1795949276
  },
  "timezone": 25200,
  "id": 1609350,
