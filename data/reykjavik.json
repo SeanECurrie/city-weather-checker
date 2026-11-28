@@ -5,35 +5,37 @@
  },
  "weather": [
   {
-   "id": 612,
-   "main": "Snow",
-   "description": "light shower sleet",
-   "icon": "13n"
+   "id": 501,
+   "main": "Rain",
+   "description": "moderate rain",
+   "icon": "10n"
   }
  ],
  "base": "stations",
  "main": {
-  "temp": 37.06,
-  "feels_like": 34.5,
-  "temp_min": 37.06,
-  "temp_max": 37.06,
-  "pressure": 992,
-  "humidity": 81,
-  "sea_level": 992,
-  "grnd_level": 993
+  "temp": 36.12,
+  "feels_like": 26.82,
+  "temp_min": 36.12,
+  "temp_max": 36.12,
+  "pressure": 994,
+  "humidity": 86,
+  "sea_level": 994,
+  "grnd_level": 994
  },
  "visibility": 10000,
  "wind": {
-  "speed": 3.44,
-  "deg": 140
+  "speed": 15.17,
+  "deg": 92,
+  "gust": 23.4
+ },
+ "rain": {
+  "1h": 3.55
  },
  "clouds": {
-  "all": 75
+  "all": 100
  },
- "dt": 1795830696,
+ "dt": 1795860953,
  "sys": {
-  "type": 1,
-  "id": 91,
   "country": "IS",
   "sunrise": 1795862195,
   "sunset": 1795881289
